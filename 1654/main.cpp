@@ -30,10 +30,10 @@ int main(void)
         if(lan_cnt >= n)
         {
             result = mid;
-            start++;
+            start = mid + 1;
         }
         else
-            end--;
+            end = mid - 1;
     }
     cout << result << endl;
 
