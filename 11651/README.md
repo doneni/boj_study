@@ -1,4 +1,4 @@
-# runtime error: segfault
+# Runtime Error: `segfault`
 
     bool cmp(pair<int, int>& p1, pair<int, int>& p2)
     {
