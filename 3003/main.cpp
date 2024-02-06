@@ -13,5 +13,6 @@ int main(void)
         cin >> input[i];
         cout << ans[i] - input[i] << " ";
     }
+    
     return 0;
 }
