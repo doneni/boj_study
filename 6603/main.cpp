@@ -19,12 +19,10 @@ void dfs(int depth)
         return;
     }
 
-    for(int i = 0; i < k; i++)
+    for(int i = depth; i < k; i++)
     {
-        if(!visited[i])
+        if(!visited[i] && seq[depth - 1] < arr[i])
         {
-            if(depth && arr[i] < seq[depth - 1])
-                continue;
             visited[i] = true;
             seq[depth] = arr[i];
             dfs(depth + 1);
