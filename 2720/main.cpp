@@ -22,6 +22,5 @@ int main()
 
         cout << change << '\n';
     }
-    
     return 0;
 }
