@@ -17,8 +17,6 @@ void dfs(int idx)
     }
     for(int i = 1; i <= N; i++)
     {
-        if(idx > 0 && in[i] < arr[idx - 1])
-            continue;
         arr[idx] = in[i];
         dfs(idx + 1);
     }
