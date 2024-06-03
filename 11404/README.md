@@ -3,7 +3,7 @@
 - 매 단계 ***거쳐갈 수 있는 노드***를 추가해주는 느낌
 - 플로이드 워샬은 dp 알고리즘에 해당하고, 다익스트라는 그리디에 해당
 ---
->k번째 라운드에서의 업데이트 <br> dist[from][to] = min(dist[from][to], dist[from][k] + from[k][to])
+>k번째 라운드에서의 업데이트 <br> dist[from][to] = min(dist[from][to], dist[from][k] + dist[k][to])
 
 1. dist 인접 행렬을 초기화
 2. k번째 노드를 거쳐서 가는 경우를 고려해 업데이트...를 N번 반복
